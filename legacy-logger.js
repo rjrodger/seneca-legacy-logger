@@ -42,7 +42,7 @@ legacy_logging.preload = function () {
 
   seneca.private$.legacy_log = legacy_log
 
-  this.decorate('logroute', function api_logroute (entry, handler) {
+  seneca.decorate('logroute', function api_logroute (entry, handler) {
     if (arguments.length === 0) {
       return legacy_log.router.toString()
     }
@@ -52,6 +52,7 @@ legacy_logging.preload = function () {
     legacy_logging.makelogroute(entry, legacy_log.router)
   })
 
+  seneca.decorate('loghandler', handlers)
 
   var logger = function (seneca, data) {
     var entry = []
