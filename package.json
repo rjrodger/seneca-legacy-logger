@@ -1,0 +1,36 @@
+{
+  "name": "seneca-legacy-logger",
+  "version": "0.1.0",
+  "description": "Seneca plugin that provides backwards compatible logging for Seneca 3.x",
+  "main": "legacy-logger.js",
+  "scripts": {
+    "test": "lab -v -P test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjrodger/seneca-legacy-logger.git"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "legacy",
+    "logger"
+  ],
+  "author": "Richard Rodger (http://richardrodger.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjrodger/seneca-legacy-logger/issues"
+  },
+  "homepage": "https://github.com/rjrodger/seneca-legacy-logger",
+  "dependencies": {
+    "eraro": "^0.4.1",
+    "jsonic": "^0.2.2",
+    "lodash": "^4.5.0",
+    "patrun": "^0.5.0"
+  },
+  "devDependencies": {
+    "code": "1.5.0",
+    "joi": "6.10.x",
+    "lab": "6.2.x"
+  }
+}
