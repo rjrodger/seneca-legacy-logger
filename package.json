@@ -1,6 +1,6 @@
 {
   "name": "seneca-legacy-logger",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Seneca plugin that provides backwards compatible logging for Seneca 3.x",
   "main": "legacy-logger.js",
   "scripts": {
