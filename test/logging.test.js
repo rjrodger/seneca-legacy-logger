@@ -221,4 +221,13 @@ describe('logging', function () {
       Logging.log_act_cache(instance, actinfo, actmeta, {}, prior_ctxt, {})
     })
   })
+
+  describe('Fs dependency', function () {
+    it('using file loghandler', function (done) {
+      var seneca = require("seneca");
+      let microservice = 	seneca(	{"internal" : 	{"logger"	: require("..")}});
+      microservice.logroute({"level" : "all", "handler" : microservice.loghandler.file(`/dev/null`)});
+      done();
+    })
+  })
 })

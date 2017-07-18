@@ -7,7 +7,7 @@ var _ = require('lodash')
 var Patrun = require('patrun')
 var Jsonic = require('jsonic')
 var Eraro = require('eraro')
-
+var Fs = require('fs')
 
 // Shortcuts
 var arrayify = Function.prototype.apply.bind(Array.prototype.slice)
